@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"source_id": "study-scope-2", "record_kind": "study_scope", "collected_at": "2026-07-02T09:00:00+08:00", "payload": {"study_id": "ST-SYN-2", "revision": 2, "consent_scope": "device-follow-up", "valid_from": "2026-06-01", "valid_to": "2027-05-31"}},
+    {"source_id": "site-batch-10", "record_kind": "site_submission", "collected_at": "2026-07-15T14:30:00+08:00", "payload": {"study_id": "ST-SYN-2", "site_ref": "SITE-SYN-10", "submission_id": "SUB-88", "revision": 1, "period": "2026-06", "participant_ref": "SUBJECT-SYN-31", "consent_revision": 2}},
+    {"source_id": "device-serial-8", "record_kind": "device_use", "collected_at": "2026-07-15T14:42:00+08:00", "payload": {"study_id": "ST-SYN-2", "submission_id": "SUB-88", "device_ref": "DEV-SYN-8", "lot_ref": "LOT-SYN-4", "used_at": "2026-06-24"}},
+    {"source_id": "lot-record-4", "record_kind": "production_lot", "collected_at": "2026-07-10T11:00:00+08:00", "payload": {"lot_ref": "LOT-SYN-4", "device_ref": "DEV-SYN-8", "line_ref": "LINE-SYN-1", "state": "released", "revision": 3}},
+    {"source_id": "site-correction-3", "record_kind": "site_correction", "collected_at": "2026-07-19T08:15:00+08:00", "payload": {"submission_id": "SUB-88", "revision": 2, "change": "follow-up-window", "reason_code": "source-review"}}
+  ]
+}
