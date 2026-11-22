@@ -1,0 +1,11 @@
+{
+  "_comment": "Synthetic scenario: a released lot linked to a submission, plus a second lot whose device_ref looks similar (same product family wording) but is a different object. A later correction renames the first lot.",
+  "sources": [
+    {"source_id": "scope-lot", "record_kind": "study_scope", "collected_at": "2026-06-02T09:00:00+08:00", "payload": {"study_id": "ST-LOT", "revision": 1, "consent_scope": "device-follow-up", "valid_from": "2026-06-01", "valid_to": "2027-05-31"}},
+    {"source_id": "lot-lot-a", "record_kind": "production_lot", "collected_at": "2026-06-05T10:00:00+08:00", "payload": {"lot_ref": "LOT-A", "device_ref": "DEV-PUMP", "line_ref": "LINE-1", "state": "released", "revision": 1}},
+    {"source_id": "lot-lot-a-sim", "record_kind": "production_lot", "collected_at": "2026-06-05T10:05:00+08:00", "payload": {"lot_ref": "LOT-A-SIMILAR", "device_ref": "DEV-PUMP-2", "line_ref": "LINE-2", "state": "released", "revision": 1}},
+    {"source_id": "submission-lot", "record_kind": "site_submission", "collected_at": "2026-07-01T12:00:00+08:00", "payload": {"study_id": "ST-LOT", "site_ref": "SITE-LOT-1", "submission_id": "SUB-LOT-1", "revision": 1, "period": "2026-06", "participant_ref": "SUBJECT-LOT-1", "consent_revision": 1}},
+    {"source_id": "device-lot", "record_kind": "device_use", "collected_at": "2026-07-01T12:10:00+08:00", "payload": {"study_id": "ST-LOT", "submission_id": "SUB-LOT-1", "device_ref": "DEV-PUMP", "lot_ref": "LOT-A", "used_at": "2026-06-14"}},
+    {"source_id": "followup-lot", "record_kind": "site_follow_up", "collected_at": "2026-07-20T09:00:00+08:00", "payload": {"study_id": "ST-LOT", "submission_id": "SUB-LOT-1", "window": "2026-06", "events_observed": 0, "data_complete": true}}
+  ]
+}

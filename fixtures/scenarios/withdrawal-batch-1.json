@@ -1,0 +1,11 @@
+{
+  "_comment": "Synthetic scenario: a published evaluation is decided on submission SUB-WD-1; a later withdrawal targets its follow-up. The published basis must be preserved while the current record loses completeness.",
+  "sources": [
+    {"source_id": "scope-wd", "record_kind": "study_scope", "collected_at": "2026-06-02T09:00:00+08:00", "payload": {"study_id": "ST-WD", "revision": 1, "consent_scope": "device-follow-up", "valid_from": "2026-06-01", "valid_to": "2027-05-31"}},
+    {"source_id": "lot-wd", "record_kind": "production_lot", "collected_at": "2026-06-05T10:00:00+08:00", "payload": {"lot_ref": "LOT-WD-1", "device_ref": "DEV-WD-1", "line_ref": "LINE-WD-1", "state": "released", "revision": 1}},
+    {"source_id": "submission-wd", "record_kind": "site_submission", "collected_at": "2026-07-01T12:00:00+08:00", "payload": {"study_id": "ST-WD", "site_ref": "SITE-WD-1", "submission_id": "SUB-WD-1", "revision": 1, "period": "2026-06", "participant_ref": "SUBJECT-WD-1", "consent_revision": 1}},
+    {"source_id": "device-wd", "record_kind": "device_use", "collected_at": "2026-07-01T12:10:00+08:00", "payload": {"study_id": "ST-WD", "submission_id": "SUB-WD-1", "device_ref": "DEV-WD-1", "lot_ref": "LOT-WD-1", "used_at": "2026-06-14"}},
+    {"source_id": "followup-wd", "record_kind": "site_follow_up", "collected_at": "2026-07-20T09:00:00+08:00", "payload": {"study_id": "ST-WD", "submission_id": "SUB-WD-1", "window": "2026-06", "events_observed": 1, "data_complete": true}},
+    {"source_id": "evaluation-wd", "record_kind": "evaluation_record", "collected_at": "2026-07-25T16:00:00+08:00", "payload": {"evaluation_id": "EV-WD-1", "study_id": "ST-WD", "revision": 1, "status": "published", "decided_at": "2026-07-25", "evidence_refs": ["SUB-WD-1"], "conclusion": "one event observed; device lot traceable"}}
+  ]
+}

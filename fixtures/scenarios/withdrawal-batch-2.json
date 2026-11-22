@@ -1,0 +1,6 @@
+{
+  "_comment": "Synthetic scenario: follow-up source previously relied upon is withdrawn by the site. Must not silently rewrite the published conclusion, but must flag the evaluation for review and stop treating the record as complete evidence.",
+  "sources": [
+    {"source_id": "withdrawal-wd", "record_kind": "source_withdrawal", "collected_at": "2026-08-02T10:00:00+08:00", "payload": {"target_source_id": "followup-wd", "reason_code": "data-integrity", "scope": "follow-up"}}
+  ]
+}

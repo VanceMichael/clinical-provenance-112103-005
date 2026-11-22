@@ -1,0 +1,6 @@
+{
+  "_comment": "Synthetic scenario: the lot identity LOT-A is corrected to LOT-A-RENAMED. The device_use still cites LOT-A, so the association is no longer provable until the site resubmits. The similarly named LOT-A-SIMILAR must never be substituted.",
+  "sources": [
+    {"source_id": "lot-correction-a", "record_kind": "lot_correction", "collected_at": "2026-08-05T11:00:00+08:00", "payload": {"lot_ref": "LOT-A", "revision": 2, "field": "lot_ref", "new_value": "LOT-A-RENAMED", "reason_code": "label-correction"}}
+  ]
+}

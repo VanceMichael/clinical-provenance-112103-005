@@ -1,0 +1,10 @@
+{
+  "_comment": "Synthetic scenario: consent scope and validity window that do not cover the submission period. Demonstrates out-of-scope exclusion distinct from insufficient data.",
+  "sources": [
+    {"source_id": "scope-narrow", "record_kind": "study_scope", "collected_at": "2026-03-01T09:00:00+08:00", "payload": {"study_id": "ST-NARROW", "revision": 1, "consent_scope": "device-follow-up", "valid_from": "2026-01-01", "valid_to": "2026-03-31"}},
+    {"source_id": "lot-narrow", "record_kind": "production_lot", "collected_at": "2026-03-05T10:00:00+08:00", "payload": {"lot_ref": "LOT-NARROW-1", "device_ref": "DEV-NARROW-1", "line_ref": "LINE-NARROW-1", "state": "released", "revision": 1}},
+    {"source_id": "submission-narrow", "record_kind": "site_submission", "collected_at": "2026-07-01T12:00:00+08:00", "payload": {"study_id": "ST-NARROW", "site_ref": "SITE-NARROW-1", "submission_id": "SUB-NARROW-1", "revision": 1, "period": "2026-06", "participant_ref": "SUBJECT-NARROW-1", "consent_revision": 1}},
+    {"source_id": "device-narrow", "record_kind": "device_use", "collected_at": "2026-07-01T12:10:00+08:00", "payload": {"study_id": "ST-NARROW", "submission_id": "SUB-NARROW-1", "device_ref": "DEV-NARROW-1", "lot_ref": "LOT-NARROW-1", "used_at": "2026-06-14"}},
+    {"source_id": "followup-narrow", "record_kind": "site_follow_up", "collected_at": "2026-07-20T09:00:00+08:00", "payload": {"study_id": "ST-NARROW", "submission_id": "SUB-NARROW-1", "window": "2026-06", "events_observed": 1, "data_complete": true}}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "_comment": "Synthetic scenario: complete device follow-up with a traceable lot and an explicit zero-event observation. No real patients or products.",
+  "sources": [
+    {"source_id": "scope-clean", "record_kind": "study_scope", "collected_at": "2026-06-02T09:00:00+08:00", "payload": {"study_id": "ST-CLEAN", "revision": 1, "consent_scope": "device-follow-up", "valid_from": "2026-06-01", "valid_to": "2027-05-31"}},
+    {"source_id": "lot-clean", "record_kind": "production_lot", "collected_at": "2026-06-05T10:00:00+08:00", "payload": {"lot_ref": "LOT-CLEAN-1", "device_ref": "DEV-CLEAN-1", "line_ref": "LINE-CLEAN-1", "state": "released", "revision": 1}},
+    {"source_id": "submission-clean", "record_kind": "site_submission", "collected_at": "2026-07-01T12:00:00+08:00", "payload": {"study_id": "ST-CLEAN", "site_ref": "SITE-CLEAN-1", "submission_id": "SUB-CLEAN-1", "revision": 1, "period": "2026-06", "participant_ref": "SUBJECT-CLEAN-1", "consent_revision": 1}},
+    {"source_id": "device-clean", "record_kind": "device_use", "collected_at": "2026-07-01T12:10:00+08:00", "payload": {"study_id": "ST-CLEAN", "submission_id": "SUB-CLEAN-1", "device_ref": "DEV-CLEAN-1", "lot_ref": "LOT-CLEAN-1", "used_at": "2026-06-14"}},
+    {"source_id": "followup-clean", "record_kind": "site_follow_up", "collected_at": "2026-07-20T09:00:00+08:00", "payload": {"study_id": "ST-CLEAN", "submission_id": "SUB-CLEAN-1", "window": "2026-06", "events_observed": 0, "data_complete": true}}
+  ]
+}
